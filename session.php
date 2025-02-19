@@ -6,6 +6,7 @@ header("Location: login.php");
 exit();
 }
 
+
 $sess_email = $_SESSION["email"];
 $sql = "SELECT user_id, firstname, lastname, email FROM users WHERE email = '$sess_email'";
 $result = $con->query($sql);
